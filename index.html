@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Form</title>
+    <!-- Bootstrap File -->
+     <link rel="stylesheet" href="Assest/Bootstrap/bootstrap.min.css">
+    <!-- Css File -->
+     <link rel="stylesheet" href="Assest/Css/style.css">
+</head>
+<body>
+
+    <!-- form_Backgroud -->
+    <div class="main">
+
+        <div class="form-background">
+        <form>
+            <div class="form-Input">
+                <!-- Name -->
+                <label for="Name">Name</label>
+                <input type="text" placeholder="Enter Your Name" class="form_details" id="nameInput">
+                <span id="spanName">Please Enter Your Name!</span>
+                <!-- /Name -->
+            </div>
+            
+            <div class="form-Input">
+                <!-- Email -->
+                <label for="Email">Email</label>
+                <input type="text" placeholder="Enter Your Email" class="form_details" id="emailInput">
+                <span id="spanEmail">Please Enter Your Email!</span>
+                <!-- /Email -->
+            </div>
+    
+            <div class="form-Input">
+                <!-- Password -->
+                <label for="Password">Password</label>
+                <input type="password" placeholder="Enter Your Password" class="form_details" id="passwordInput">
+                <span id="spanPassword"></span>
+                <!-- /Password -->
+            </div>
+            
+            <div class="form-Input">
+                <!-- Address -->
+                <label>Address</label>
+                <textarea type="tex" class="form_details_Add" placeholder="Enter Your Address" id="addressInput"></textarea>
+                <span id="addSpan">Please Enter Your Address!</span>
+                <!-- /Address -->
+            </div>
+
+            <div class="form-Input">
+                <!-- Sport_CheckBox -->
+                <label>Choose your sports</label><br>
+                <input type="checkbox" class="inputCheck">Cricket<br>
+                <input type="checkbox" class="inputCheck">Football<br>
+                <input type="checkbox"class="inputCheck">Baseball<br>
+                <span>Please choose your sport!</span>
+                <!-- /Sport_CheckBox -->
+            </div>
+
+            <div class="form-Input">
+                <!-- Gender_radio -->
+                <label>Choose your Gender</label><br>
+                <input type="radio" class="inputradio">Male<br>
+                <input type="radio" class="inputradio">Female<br>
+                <input type="radio"class="inputradio">Prefer not to say<br>
+                <span>Please choose your gender!</span>
+                <!-- /Gender_radio -->
+            </div>
+
+            <div class="form-Input">
+                <!-- Select Country -->
+                <label>Select your country</label><br>
+                <select style="width: 100%; height: 40px;  border-radius: 5px; margin-top: 15px; font-weight: 500;" id="selcetInput">
+                    <option>Please Select your Country</option>
+                    <option>India</option>
+                    <option>Pakistan</option>
+                    <option>UAE</option>
+                </select>
+
+                <span id="spanSelect">Please choose your Country!</span>
+                <!-- /Select Country -->
+            </div>
+
+            <!-- BUttons -->
+            <div class="buttons mb-3 pt-4 d-flex justify-content-between">
+                <button type="submit" class="btn btn-outline-danger">Reset</button>
+                <button type="button"class="btn btn-danger"onclick="sumbitData()">Save</button>
+              </div>
+            <!-- BUttons -->
+
+
+            
+        </form>
+
+    </div>
+
+    
+    </div>
+
+    <script src="Assest/Bootstrap/bootstrap.min.js"></script>
+    <script src="Assest/Bootstrap/popper.min.js"></script>
+
+    <script src="Assest/Js/java.js"></script>
+    
+</body>
+</html>
