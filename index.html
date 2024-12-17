@@ -50,10 +50,10 @@
             <div class="form-Input">
                 <!-- Sport_CheckBox -->
                 <label>Choose your sports</label><br>
-                <input type="checkbox" class="inputCheck">Cricket<br>
-                <input type="checkbox" class="inputCheck">Football<br>
-                <input type="checkbox"class="inputCheck">Baseball<br>
-                <span>Please choose your sport!</span>
+                <input type="checkbox" class="inputCheck" name="sportPlay">Cricket<br>
+                <input type="checkbox" class="inputCheck" name="sportPlay">Football<br>
+                <input type="checkbox"class="inputCheck" name="sportPlay">Baseball<br>
+                <span id="spanSport">Please choose your sport!</span>
                 <!-- /Sport_CheckBox -->
             </div>
 
@@ -84,7 +84,7 @@
             <!-- BUttons -->
             <div class="buttons mb-3 pt-4 d-flex justify-content-between">
                 <button type="submit" class="btn btn-outline-danger">Reset</button>
-                <button type="button"class="btn btn-danger"onclick="sumbitData()">Save</button>
+                <button type="button"class="btn btn-danger" onclick="mainData()">Save</button>
               </div>
             <!-- BUttons -->
 
@@ -93,13 +93,63 @@
         </form>
 
     </div>
-
     
     </div>
 
+    <div class="form-2">
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Address</th>
+                <th>Sports</th>
+                <th>Gender</th>
+                <th>Country</th>
+                <th>Edit</th>
+                <th>Delete</th>
+
+            </thead>
+
+            <tbody id="tableDetailes">
+                <tr>
+                    <td>
+                        <span id="name"></span>
+                    </td>
+                    <td>
+                        <span id="email"></span>
+                    </td>
+                    <td>
+                        <span id="password"></span>
+                    </td>
+                    <td>
+                        <span id="address"></span>
+                    </td>
+                    <td>
+                        <span id="sport"></span>
+                    </td>
+                    <td>
+                        <span id="gender"></span>
+                    </td>
+                    <td>
+                        <span id="country"></span>
+                    </td>
+                    <td>
+                        <span id="edit"></span>
+                    </td>
+                    <td>
+                        <span id="delete"></span>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Bootstrap File -->
     <script src="Assest/Bootstrap/bootstrap.min.js"></script>
     <script src="Assest/Bootstrap/popper.min.js"></script>
-
+     <!-- JavaScprit File -->
     <script src="Assest/Js/java.js"></script>
     
 </body>
