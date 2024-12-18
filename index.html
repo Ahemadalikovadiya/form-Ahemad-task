@@ -60,17 +60,17 @@
             <div class="form-Input">
                 <!-- Gender_radio -->
                 <label>Choose your Gender</label><br>
-                <input type="radio" class="inputradio">Male<br>
-                <input type="radio" class="inputradio">Female<br>
-                <input type="radio"class="inputradio">Prefer not to say<br>
-                <span>Please choose your gender!</span>
+                <input type="radio" class="inputradio" value="Male" name="gender">Male<br>
+                <input type="radio" class="inputradio" value="Female" name="gender">Female<br>
+                <input type="radio"class="inputradio" value="Prefernot" name="gender">Prefer not to say<br>
+                <span id="spanGender">Please choose your gender!</span>
                 <!-- /Gender_radio -->
             </div>
 
             <div class="form-Input">
                 <!-- Select Country -->
                 <label>Select your country</label><br>
-                <select style="width: 100%; height: 40px;  border-radius: 5px; margin-top: 15px; font-weight: 500;" id="selcetInput">
+                <select style="width: 100%; height: 40px;  border-radius: 5px; margin-top: 15px; font-weight: 500;" id="countryInput">
                     <option>Please Select your Country</option>
                     <option>India</option>
                     <option>Pakistan</option>
@@ -138,7 +138,7 @@
                         <span id="edit"></span>
                     </td>
                     <td>
-                        <span id="delete"></span>
+                        <span id="delete"><button>Delete</button></span>
                     </td>
 
                 </tr>
